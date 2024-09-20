@@ -1,0 +1,133 @@
+.fonte-pixel {
+    font-family: "Pixelify Sans", sans-serif;
+    color: #1bdc14;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    background-image: url("img/banner.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.digitacao-texto {
+    font-family: monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    width: 12ch;
+    /* Define a largura máxima para o texto */
+    animation: digitar 4s steps(12) 1s infinite alternate;
+    /* steps define o número de letras */
+}
+
+@keyframes digitar {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 12ch;
+    }
+
+    /* Defina o número de caracteres do texto */
+}
+
+.perfil {
+    width: 230px;
+    border-radius: 100%;
+
+}
+
+.borda {
+    border: 1px solid rgb(27, 220, 20);
+}
+
+.icones {
+    width: 55px;
+    margin: 8px;
+}
+
+.fade_efeito {
+    opacity: 0;
+    /* Começa invisível */
+    transition: opacity 1s;
+    /* Duração do fade */
+}
+
+.fade-in {
+    opacity: 1;
+    /* Fica visível */
+}
+
+.cartao {
+    width: 380px;
+    height: 280px;
+    border-radius: 10px;
+    transition: width 0.3s ease, height 0.3s ease;
+    overflow: hidden;
+}
+
+
+.exemplo {
+    width: 300px;
+    
+}
+
+textarea:hover,
+input:hover {
+    background: #f2f2f2;
+
+}
+
+form textarea {
+    resize: none;
+}
+
+.botao_enviar {
+    font-family: "Pixelify Sans", sans-serif;
+    color: black;
+    background-color: rgb(27, 220, 20);
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    border: 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* .botao_enviar:hover {
+    background-color: rgb(104, 255, 98);
+} */
+
+.botao_limpar {
+    font-family: "Pixelify Sans", sans-serif;
+    color: black;
+    background-color: rgb(97, 92, 92);
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    border: 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contatos {
+    width: 35px;
+}
+
+.efeito{
+    transition: transform 0.3s ease; 
+}
+
+.efeito:hover{
+    transform:  translateY(-5px);
+}
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
